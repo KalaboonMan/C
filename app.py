@@ -21,3 +21,6 @@ def search_by_name():
         result = next((course for course in courses if course['name'] == course_name), None)
         
     return render_template('search_by_name.html', result=result)
+
+if __name__ == '__main__':
+    app.run(debug=True)
